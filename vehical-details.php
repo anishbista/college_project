@@ -154,8 +154,6 @@ $_SESSION['brndid']=$result->bid;
             <!-- Nav tabs -->
             <ul class="nav nav-tabs gray-bg" role="tablist">
               <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Vehicle Overview </a></li>
-
-              <li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Accessories</a></li>
             </ul>
 
             <!-- Tab panes -->
@@ -167,91 +165,7 @@ $_SESSION['brndid']=$result->bid;
               </div>
 
 
-              <!-- Accessories -->
-              <div role="tabpanel" class="tab-pane" id="accessories">
-                <!--Accessories-->
-                <table>
-                  <thead>
-                    <tr>
-                      <th colspan="2">Accessories</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-
-
-<tr>
-<td>AntiLock Braking System (ABS)</td>
-<?php if($result->AntiLockBrakingSystem==1)
-{
-?>
-<td><i class="fa fa-check" aria-hidden="true"></i></td>
-<?php } else {?>
-<td><i class="fa fa-close" aria-hidden="true"></i></td>
-<?php } ?>
-                    </tr>
-
-<tr>
-<td>Smooth Handling</td>
-<?php if($result->PowerSteering==1)
-{
-?>
-<td><i class="fa fa-check" aria-hidden="true"></i></td>
-<?php } else { ?>
-<td><i class="fa fa-close" aria-hidden="true"></i></td>
-<?php } ?>
-</tr>
-
-
-
-
-
-<tr>
-<td>Leather Seats</td>
-<?php if($result->LeatherSeats==1)
-{
-?>
-<td><i class="fa fa-check" aria-hidden="true"></i></td>
-<?php } else { ?>
-<td><i class="fa fa-close" aria-hidden="true"></i></td>
-<?php } ?>
-</tr>
-
-<tr>
-<td>Central Locking</td>
-<?php if($result->CentralLocking==1)
-{
-?>
-<td><i class="fa fa-check" aria-hidden="true"></i></td>
-<?php } else { ?>
-<td><i class="fa fa-close" aria-hidden="true"></i></td>
-<?php } ?>
-</tr>
-
-<td>Brake Assist</td>
-<?php if($result->BrakeAssist==1)
-{
-?>
-<td><i class="fa fa-check" aria-hidden="true"></i></td>
-<?php  } else { ?>
-<td><i class="fa fa-close" aria-hidden="true"></i></td>
-<?php } ?>
-</tr>
-
-
-<tr>
-<td>Crash Sensor</td>
-<?php if($result->CrashSensor==1)
-{
-?>
-<td><i class="fa fa-check" aria-hidden="true"></i></td>
-<?php } else { ?>
-<td><i class="fa fa-close" aria-hidden="true"></i></td>
-<?php } ?>
-</tr>
-
-                  </tbody>
-                </table>
-              </div>
+             
             </div>
           </div>
 
